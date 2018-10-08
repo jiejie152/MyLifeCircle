@@ -1,0 +1,24 @@
+<view class="container">
+
+
+  <view class="search-group">
+    <view class="search-input">
+      <input class="search-input" placeholder="搜索" auto-focus/>
+    </view>
+    <view class="search-icon">
+      <icon type="search" size="20" />
+    </view>
+  </view>
+
+  <view class="pics">
+    <image class="pic1" src='https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=3671054276,3069643392&fm=26&gp=0.jpg'></image>
+  </view>
+  <view class="services">
+    <block wx:for="{{services}}">
+    <view class="service-group">
+      <image class="service-icon" src="{{item.url}}"></image>
+      <text class="service-name">{{item.name}}</text>
+      </view>
+    </block>
+  </view>
+</view>
