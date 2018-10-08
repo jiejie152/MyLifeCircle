@@ -15,10 +15,8 @@
   </view>
   <view class="services">
     <block wx:for="{{services}}">
-    <view class="service-group">
       <image class="service-icon" src="{{item.url}}"></image>
-      <text class="service-name">{{item.name}}</text>
-      </view>
+      <!-- <text class="service-name">{{item.name}}</text> -->
     </block>
   </view>
 </view>
